@@ -6,35 +6,126 @@
 <title>AK TRADERS | CCTV & Security Solutions</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:#f5f5f5;
-text-align:center;
 }
+
+body{
+background:#f4f4f4;
+color:#222;
+}
+
 header{
 background:#111;
-color:white;
-padding:30px;
+padding:20px;
+text-align:center;
 }
-h1{
+
+header h1{
 color:#FFD700;
+font-size:40px;
 }
-.hero{
-padding:40px 20px;
-}
-button{
-background:#FFD700;
-color:black;
-border:none;
-padding:15px 30px;
+
+header p{
+color:#fff;
 font-size:18px;
-border-radius:8px;
-cursor:pointer;
+margin-top:10px;
 }
-footer{
+
+.hero{
+background:#000;
+color:#fff;
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h2{
+font-size:38px;
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:15px 35px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+font-size:18px;
+}
+
+section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+font-size:34px;
+margin-bottom:40px;
+color:#111;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#111;
+}
+
+.card p{
+line-height:1.7;
+}.about{
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.contact{
 background:#111;
-color:white;
+color:#fff;
+padding:50px 20px;
+border-radius:12px;
+text-align:center;
+}
+
+.contact h2{
+color:#FFD700;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:18px;
+margin:10px 0;
+}
+
+footer{
+background:#000;
+color:#fff;
+text-align:center;
 padding:20px;
 margin-top:40px;
 }
@@ -45,31 +136,131 @@ margin-top:40px;
 
 <header>
 <h1>AK TRADERS</h1>
-<h3>CCTV & Security Solutions</h3>
+<p>CCTV & Security Solutions</p>
 </header>
 
-<div class="hero">
+<section class="hero">
 <h2>Your Safety, Our Responsibility</h2>
-
 <p>Professional CCTV Sales, Installation & Service</p>
 
-<p>
-📍 Tiruchendur | Udangudi
-</p>
+<a class="btn"
+href="https://wa.me/918270828241">
+WhatsApp Now
+</a>
 
-<p>
-📞 8270828241 | 8270828243 | 8270828246 | 8270828229
-</p>
+</section>
 
-<button onclick="window.location.href='https://wa.me/918270828241'">
-WhatsApp Us
-</button>
+<section>
+
+<h2 class="title">
+Our Services
+</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>📹 CCTV Cameras</h3>
+<p>High Quality HD & IP CCTV Cameras for Home, Shop & Office.</p>
+</div>
+
+<div class="card">
+<h3>🛡 Security Systems</h3>
+<p>Complete Security Solutions with Installation & Maintenance.</p>
+</div>
+
+<div class="card">
+<h3>📺 Android TVs</h3>
+<p>Latest Smart Android TVs with Best Price.</p>
+</div>
 
 </div>
 
+</section><section>
+
+<h2 class="title">
+Why Choose AK TRADERS?
+</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>✅ Professional Installation</h3>
+<p>Experienced technicians with neat and reliable installation.</p>
+</div>
+
+<div class="card">
+<h3>📱 Mobile Live View</h3>
+<p>Watch your home or business anytime, anywhere from your smartphone.</p>
+</div>
+
+<div class="card">
+<h3>🔧 After Sales Support</h3>
+<p>Fast service support and customer satisfaction are our priority.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">
+About AK TRADERS
+</h2>
+
+<div class="about">
+
+<p>
+AK TRADERS is a trusted CCTV & Security Solutions provider serving
+Tiruchendur, Udangudi and surrounding areas.
+</p>
+
+<br>
+
+<p>
+We provide CCTV Sales, Professional Installation,
+Security Systems, Android TVs and reliable after-sales service.
+</p>
+
+</div>
+
+</section><section class="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>📍 Tiruchendur Branch</strong></p>
+<p>Tirunelveli Road, Royal Enfield Showroom, 1st Floor, Tiruchendur</p>
+
+<br>
+
+<p><strong>📍 Udangudi Branch</strong></p>
+<p>Bus Stand மிக அருகில், Udangudi</p>
+
+<br>
+
+<p><strong>📞 Contact</strong></p>
+<p>8270828241 | 8270828243 | 8270828246 | 8270828229</p>
+
+<br>
+
+<p><strong>📲 WhatsApp</strong></p>
+
+<a class="btn"
+href="https://wa.me/918270828241">
+Chat on WhatsApp
+</a>
+
+</section>
+
 <footer>
 
-© 2026 AK TRADERS
+<p><strong>AK TRADERS</strong></p>
+
+<p>CCTV & Security Solutions</p>
+
+<p style="margin-top:10px;">
+© 2026 AK TRADERS. All Rights Reserved.
+</p>
 
 </footer>
 
