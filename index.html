@@ -196,7 +196,7 @@ WhatsApp Now
 
 <h2 class="title">Our Shop</h2>
 
-<div class="gallery">
+<div class="slider">
 
 <img src="IMG_20260702_180549.jpg">
 
@@ -210,7 +210,7 @@ WhatsApp Now
 
 <h2 class="title">Featured Products</h2>
 
-<div class="gallery">
+<div class="slider">
 
 <img src="IMG_20260702_180700.jpg">
 
@@ -308,7 +308,20 @@ Udangudi.<br><br>
 WhatsApp
 
 </a>
+<script>
+let slides = document.querySelectorAll(".slider img");
+let current = 0;
 
+if (slides.length > 0) {
+  slides[0].classList.add("active");
+
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 3000);
+}
+</script>
 </body>
 
 </html>
